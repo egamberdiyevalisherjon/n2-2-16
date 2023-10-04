@@ -38,24 +38,27 @@ button {
 .btn {
   padding: 1.5rem 3.75rem;
   border-radius: var(--bs-border-radius-pill) !important;
-
-  &:hover {
-    opacity: 0.9;
-  }
+}
+.btn:hover {
+  opacity: 0.9;
 }
 
-section {
-  .title {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 4rem;
-      top: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      border-bottom: 3px solid var(--bs-orange);
-    }
-  }
+section .title {
+  position: relative;
 }
+section .title::after {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 3px solid var(--bs-orange);
+}
+
+header#main-header a {
+  transition: 0.3s all ease-in-out;
+}
+header#main-header a:hover, header#main-header a.active {
+  color: var(--bs-orange);
+}/*# sourceMappingURL=login.css.map */
